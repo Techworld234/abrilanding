@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Red Verif</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; color:#333; }
+    header { display:flex; align-items:center; padding:20px; }
+    header img { height:50px; }
+    .hero { text-align:center; padding:60px 20px; background:#f9f9f9; }
+    .hero h1 { font-size:2.5rem; margin-bottom:20px; }
+    .hero p { font-size:1.1rem; margin-bottom:30px; }
+    .cta { padding:15px 30px; font-size:1.1rem; color:#fff; background:#007bff;
+           border:none; border-radius:5px; cursor:pointer; text-decoration:none; }
+    .whatsapp-btn {
+      position:fixed; bottom:20px; right:20px;
+      background:#25D366; color:#fff;
+      border-radius:50%; width:60px; height:60px;
+      display:flex; align-items:center; justify-content:center;
+      text-decoration:none; box-shadow:0 4px 6px rgba(0,0,0,0.2);
+      z-index:1000;
+    }
+    .whatsapp-btn svg { width:30px; height:30px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Netlify_logo.svg" alt="Logo">
+  </header>
+
+  <section class="hero">
+    <h1>Título principal de la landing</h1>
+    <p>Un breve subtítulo o mensaje de valor que enganche al visitante.</p>
+    <a href="#tucampaña" class="cta">Call To Action</a>
+  </section>
+
+  <a
+    href="https://api.whatsapp.com/send?phone=5493511234567&text=Hola%2C%20quiero%20informaci%C3%B3n"
+    class="whatsapp-btn"
+    target="_blank"
+    rel="noopener"
+    aria-label="Chatear por WhatsApp"
+  >
+    <svg viewBox="0 0 32 32">
+      <path fill="#fff" d="M19.11,17.56c-0.28-0.14-1.67-0.83-1.93-0.92c-0.26-0.1-0.45-0.14-0.64,0.14
+        c-0.19,0.28-0.73,0.91-0.9,1.1c-0.17,0.19-0.34,0.21-0.62,0.07c-0.28-0.14-1.18-0.43-2.25-1.39c-0.83-0.74-1.39-1.66-1.55-1.94
+        c-0.16-0.28-0.02-0.43,0.12-0.57c0.13-0.13,0.28-0.34,0.42-0.51c0.14-0.17,0.19-0.28,0.28-0.47c0.09-0.19,0.05-0.36-0.02-0.5
+        c-0.07-0.14-0.64-1.54-0.88-2.1c-0.23-0.56-0.46-0.49-0.64-0.5c-0.17,0-0.36,0-0.55,0c-0.19,0-0.5,0.07-0.76,0.36
+        c-0.26,0.28-1,0.97-1,2.37c0,1.4,1.02,2.75,1.16,2.94c0.14,0.19,2,3.06,4.85,4.29c0.68,0.29,1.21,0.46,1.63,0.59
+        c0.69,0.22,1.31,0.19,1.8,0.11c0.55-0.08,1.67-0.68,1.91-1.33c0.24-0.64,0.24-1.19,0.17-1.33C19.6,17.79,19.39,17.69,19.11,17.56z"/>
+    </svg>
+  </a>
+</body>
+</html>
